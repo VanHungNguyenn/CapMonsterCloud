@@ -2,7 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #1E50D2;
 }
 
 h6 {
@@ -31,9 +35,6 @@ nav {
 
 a {
     text-decoration: none;
-}
-
-nav a {
     color: #fff;
 }
 
@@ -49,18 +50,18 @@ nav a h1 {
     list-style: none;
     display: inline-block;
     padding: 8px 6px;
-    font-size: 18px;
 }
 
 nav .fa {
     display: none;
 }
 
-.nav-links ul li a {
+.btn {
     padding: 10px 12px;
     position: relative;
     cursor: pointer;
     border-radius: 10px;
+    font-size: 18px;
 }
 
 .btn-transparent {
@@ -73,7 +74,6 @@ nav .fa {
 }
 
 .btn-silver:hover {
-    background-color: #4682E6;
     box-shadow: 20px 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -127,4 +127,189 @@ hr {
         color: #fff;
         cursor: pointer;
     }
+}
+
+.justify-content-left {
+    justify-content: left;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Banner  */
+
+.banner {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.banner-col {
+    flex-basis: 48%;
+    box-sizing: border-box;
+    padding: 20px 12px;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+.banner-col h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+
+.banner-col p {
+    color: #A0D2FA;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 34px;
+    margin-bottom: 70px;
+}
+
+.button .btn {
+    font-size: 22px;
+    padding: 12px 15px;
+    margin-right: 10px;
+}
+
+.btn-green {
+    background-color: #14BE82;
+}
+
+.btn-green:hover {
+    box-shadow: 20px 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.banner-col img {
+    width: 100%;
+}
+
+
+/* Info  */
+
+.text-black {
+    color: #000;
+}
+
+.info {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 28px 0;
+    color: #26292c;
+}
+
+.info-col {
+    flex-basis: 31%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 20px;
+}
+
+.info-col img {
+    background-color: #F0F2FC;
+    border-radius: 50%;
+}
+
+.info-col:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1092px) {
+    .info {
+        width: 90%;
+    }
+}
+
+@media (max-width: 845px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+/* Advantage  */
+
+.background-grey {
+    background: #F4F6FA;
+}
+
+.advantage {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    padding-top: 100px;
+}
+
+.advantage-col {
+    flex-basis: 95%;
+    padding-bottom: 20px;
+}
+
+.component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.component .tag {
+    padding-top: 15px;
+    padding-right: 25px;
+}
+
+h5 {
+    font-size: 16px;
+    color: #788296;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+/* Why  */
+
+.why {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.why-col {
+    flex-basis: 31%;
+    background-color: transparent;
+    border: 1px solid #F0F2FC;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 20px;
 }
