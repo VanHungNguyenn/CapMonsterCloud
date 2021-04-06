@@ -5,6 +5,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background: var(--blue-color);
+    z-index: 0;
+}
+
 :root {
     --blue-color: #1E50D2;
     --white-color: #fff;
@@ -155,6 +160,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    z-index: 2;
 }
 
 .main {
@@ -277,6 +283,14 @@ p {
     box-sizing: border-box;
     padding: 20px 12px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    background: #fff;
+    transition: 0.5s;
+}
+
+.why-col:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .why-col img {
@@ -347,6 +361,7 @@ p {
 /* Information */
 
 .info {
+    margin-top: 240px;
     width: 100%;
     position: relative;
     background-color: var(--blue-color);
@@ -409,6 +424,13 @@ p {
     background: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    z-index: 2;
+    background: #fff;
+    transition: 0.5s;
+}
+
+.money-col:hover {
+    transform: scale(1.02);
 }
 
 .money-col h1 {
@@ -500,7 +522,7 @@ p {
     font-size: 22px;
     line-height: 34px;
     color: #283246;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 
@@ -532,12 +554,19 @@ p {
 .question-col {
     width: 80%;
     text-align: center;
+    margin: 0 auto;
+}
+
+.question-col .ques:not(:last-child) {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
 .ask {
     background: #FFF;
     /* box-shadow: 5px 5px 15px rgb(0 0 0 / 10%); */
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     padding: 20px 30px;
     cursor: pointer;
     display: flex;
@@ -561,7 +590,8 @@ p {
     padding: 20px 30px;
     display: flex;
     text-align: left;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .answer p {
@@ -589,10 +619,31 @@ p {
     overflow: hidden;
 }
 
+.btn-green-light {
+    background: transparent;
+    border: 1px solid var(--green-color);
+    margin: 100px 0;
+    padding: 20px 20px;
+    color: var(--green-color);
+    padding: 0;
+    min-width: 230px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.btn-green-light:hover {
+    background: var(--green-color);
+    color: #fff;
+}
+
 
 /* Finish  */
 
 .part5 {
+    margin-top: 240px;
     width: 100%;
     position: relative;
     background: var(--blue-color);
@@ -630,4 +681,40 @@ p {
     text-decoration: none;
     font-size: 16px;
     font-weight: normal;
+}
+
+.bg {
+    background-size: cover;
+    width: 100%;
+    height: 240px;
+    z-index: 1;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+.blue-bot {
+    position: absolute;
+    background: var(--blue-color);
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+
+.blue-top {
+    position: absolute;
+    background: var(--grey-color);
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+.background-white {
+    background: #fff !important;
+    z-index: 1;
+}
+
+.grey-top {
+    clip-path: polygon(99% 100%, 100% 0, 0 100%);
+    background: var(--grey-color);
+}
+
+.grey-bottom {
+    clip-path: polygon(0 100%, 100% 0, 0 0);
+    background: var(--grey-color);
 }
