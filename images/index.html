@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- Font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>CapMonster Cloud</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <h1>CapMonster Cloud</h1>
+            </a>
+            <div class="nav-links" id="menu">
+                <ul>
+                    <li><a href="#" class="btn btn-transparent">Đăng nhập</a></li>
+                    <li><a href="#" class="btn btn-silver">Bắt đầu miễn phí</a></li>
+                </ul>
+                <i class="fa fa-times close-icon" onclick="hideMenu()"></i>
+            </div>
+            <i class="fa fa-bars menu-icon" onclick="showMenu()"></i>
+        </nav>
+        <hr>
+        <div class="banner">
+            <div class="row">
+                <div class="banner-col">
+                    <h1>Dịch vụ đám mây nhận diện capcha tự động</h1>
+                    <p>Rẻ hơn tối thiểu 2 lần và nhanh chóng hơn tới 30 lần <br> so với các dịch vụ nhận diện thủ công</p>
+                    <div class="button">
+                        <a href="#" class="btn btn-green">Bắt đầu miễn phí</a>
+                        <a href="#" class="btn btn-silver">Bản demo</a>
+                    </div>
+                </div>
+                <div class="banner-col">
+                    <img src="images/dude.svg" alt="dude">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <h2 class="text-white">Tại sao chúng tôi được lựa chọn</h2>
+        <div class="row">
+            <div class="info-col">
+                <img src="images/diamon-c.svg" alt="diamond">
+                <div class="percentage">
+                    <h3>87%</h3>
+                </div>
+                <div class="describe">
+                    <h4>Tỷ lệ nhận diện captcha thành công trung bình</h4>
+                </div>
+            </div>
+            <div class="info-col">
+                <img src="images/metrics-c.svg" alt="metrics">
+                <div class="percentage">
+                    <h3>$24</h3>
+                </div>
+                <div class="describe">
+                    <h4>Tiết kiệm trung bình hàng tháng khi nhận diện 2000 captcha mỗi ngày</h4>
+                </div>
+            </div>
+            <div class="info-col">
+                <img src="images/dollar-c.svg" alt="dollar">
+                <div class="percentage">
+                    <h3>0.81 giây</h3>
+                </div>
+                <div class="describe">
+                    <h4>Thời gian nhận diện captcha trung bình</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="background-grey">
+        <div class="advantage">
+            <h2 class="text-black">Những ưu thế của chúng tôi</h2>
+
+            <div class="advantage-col">
+                <div class="component">
+                    <div class="tag"><img src="images/label-bc.svg" alt="label"></div>
+                    <div class="content">
+                        <h3>Rẻ hơn 2-3 lần so với dịch vụ nhân diện thủ công</h3>
+                        <h5>Chúng tôi không sử dụng con người trong quá trình nhận diện, do đó không trả chi phí nhân công, toàn bộ quá trình là hoàn toàn tự động. <br>Chính nhờ vậy mà chúng tôi đảm bảo mức giá thấp nhất trên thị trường.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="advantage-col">
+                <div class="component">
+                    <div class="tag"><img src="images/settings-bc.svg" alt="label"></div>
+                    <div class="content">
+                        <h3>Tương thích với mọi chương trình</h3>
+                        <h5>CapMonster.cloud hoạt động với API của các dịch vụ nhận diện captcha thủ công phổ biến.<br>Để bắt đầu, chỉ cần nhập khóa trong phần mềm của bạn.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="advantage-col">
+                <div class="component">
+                    <div class="tag"><img src="images/rocket-bc.svg" alt="label"></div>
+                    <div class="content">
+                        <h3>Nhận diện hơn 1000 captcha mỗi phút</h3>
+                        <h5>Thời gian trung bình để nhận diện captcha mất ít hơn 1 giây, bất kể thời gian trong ngày hay mức tải của dịch vụ</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="advantage-col">
+                <div class="component">
+                    <div class="tag"><img src="images/piggybank-bc.svg" alt="label"></div>
+                    <div class="content">
+                        <h3>Không có bất kỳ rủi ro nào</h3>
+                        <h5>Bạn chỉ thanh toán tiền cho captcha đã được nhận diện. Độ tải của máy chủ không ảnh hưởng đến giá.</h5>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="why">
+        <h2 class="text-white">Tại sao chúng tôi được tin tưởng</h2>
+        <div class="row">
+            <div class="why-col">
+                <h2>10 năm</h2>
+                <h4 class="text-white">Kinh nghiệm của chúng tôi về thị giác máy tính và học bằng máy móc</h4>
+            </div>
+            <div class="why-col">
+                <h2>>15.000</h2>
+                <h4 class="text-white">Khách hàng từ 88 quốc gia sử dụng các dịch vụ và phần mềm của chúng tôi mỗi ngày</h4>
+            </div>
+            <div class="why-col">
+                <h2>Top 50</h2>
+                <h4 class="text-white">Chúng tôi nằm trong số top 50 dịch vụ tạo lưu lượng truy cập nhiều nhất trong cộng đồng Node.JS</h4>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var menu = document.getElementById("menu");
+
+        function hideMenu() {
+            menu.style.top = "-100vh";
+        }
+
+        function showMenu() {
+            menu.style.top = "0";
+        }
+    </script>
+</body>
+
+</html>
