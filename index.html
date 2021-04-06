@@ -119,6 +119,99 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="info">
+        <div class="container explain">
+            <h1>Tại sao chúng tôi được tin tưởng</h1>
+            <div class="row">
+                <div class="explain-col">
+                    <div class="explain-title">10 năm</div>
+                    <div class="explain-content">Kinh nghiệm của chúng tôi về thị giác máy tính và học bằng máy móc</div>
+                </div>
+                <div class="explain-col">
+                    <div class="explain-title">>15.000</div>
+                    <div class="explain-content">Khách hàng từ 88 quốc gia sử dụng các dịch vụ và phần mềm của chúng tôi mỗi ngày</div>
+                </div>
+                <div class="explain-col">
+                    <div class="explain-title">Top 50</div>
+                    <div class="explain-content">Chúng tôi nằm trong số top 50 dịch vụ tạo lưu lượng truy cập nhiều nhất trong cộng đồng Node.JS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="money">
+        <div class="price container">
+            <div class="row">
+                <div class="money-col">
+                    <h1>Giá cả</h1>
+                    <div class="products">
+                        <div class="product">
+                            <span class="product-title">1.000 ReCaptcha</span>
+                            <span class="product-price">$0.6</span>
+                        </div>
+                        <div class="product">
+                            <span class="product-title">1.000 ReCaptcha</span>
+                            <span class="product-price">$0.6</span>
+                        </div>
+                        <div class="product">
+                            <span class="product-title">1.000 ReCaptcha</span>
+                            <span class="product-price">$0.6</span>
+                        </div>
+                        <div class="product">
+                            <span class="product-title">1.000 ReCaptcha <span class="beta">BETA</span></span>
+                            <span class="product-price">$0.6</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-green">Hãy thử ngay bây giờ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="part3">
+        <div class="container guarantee">
+            <div class="row">
+                <img src="images/green-check.svg" alt="check">
+                <h1>Đảm bảo</h1>
+                <div class="guarantee-col">
+                    Nếu như bạn không hài lòng với chất lượng dịch vụ được cung cấp, chúng tôi đảm bảo việc hoàn trả các khoản tiền của bạn trong vòng 3 ngày kể từ ngày mua hàng.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="part4">
+        <div class="container question">
+            <h1>Những câu hỏi thường đặt ra</h1>
+            <div class="question-col">
+                <div class="ask">
+                    <a href="#">Kết nối CapMonster.cloud đến chương trình của tôi như thế nào?</a>
+                    <i class="fas fa-chevron-up"></i>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="part5">
+        <div class="finish container">
+            <h1>Hãy bắt đầu tiết kiệm tới 90% ngân sách của bạn nhân diện captcha từ CapMonster.cloud</h1>
+            <a href="#" class="btn btn-green">Bắt đầu miễn phí</a>
+            <div class="last-line">
+                <div class="copyright">CapMonster Cloud / Copyright © 2019 - 2021
+                </div>
+                <div class="help">
+                    <a href="#" class="support">Hỗ trợ</a>
+                    <a href="#" class="agreement">Thỏa thuận người dùng</a>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -132,6 +225,20 @@
 
         function hideMenu() {
             navLinks.style.top = "-100%";
+        }
+
+        var ask = document.getElementsByClassName("ask");
+        var i;
+        for (i = 0; i < ask.length; i++) {
+            ask[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var anwser = this.nextElementSibling;
+                if (anwser.style.display === "block") {
+                    anwser.style.display = "none";
+                } else {
+                    anwser.style.display = "block";
+                }
+            })
         }
     </script>
 </body>
