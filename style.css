@@ -510,7 +510,6 @@ p {
     width: 100%;
     position: relative;
     background: var(--grey-color);
-    justify-items: center;
 }
 
 .question {
@@ -562,6 +561,7 @@ p {
     padding: 20px 30px;
     display: flex;
     text-align: left;
+    border-radius: 5px;
 }
 
 .answer p {
